@@ -1,0 +1,268 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using TankGame.Network;
+using System.Timers;
+
+///
+/// Data and methods necessary to handle cells and the terrain
+///
+
+namespace TankGame.Terrain
+{
+    class World
+    {
+
+        // GAME WILL BE PLAYED IN THIS MATRIX
+        private Cell[,] map = new Cell[ConfigData.MAP_SIZE, ConfigData.MAP_SIZE];
+
+        /*
+         * 0 20 40 . . . 380
+         * 1 21 41 . . . .
+         * 2 22 42 .   . .
+         * 3 23 43 .   . .
+         * 4 24 44     . .
+         * . . .       . .
+         * . . .       . 398
+         * . . .   . . . 399
+         */
+
+        public World() { 
+            //INITIALIZE CELLS IN THE MAP
+            for (int i = 0; i < ConfigData.MAP_SIZE; i++)
+            {
+                for (int j = 0; j < ConfigData.MAP_SIZE; j++)
+                {
+                    map[i, j] = new Cell(i*ConfigData.MAP_SIZE+j);
+                   // map[i, j].g = 1;
+                    //map[i, j].cost = 0;
+                    
+                } 
+            }
+            for (int k = 0; k < ConfigData.MAP_SIZE; k++)
+            {
+                for (int n = 0; n < ConfigData.MAP_SIZE; n++)
+                {
+                    if (n - 1 > 0)     //left neighbour
+                        map[k, n].neighbours.Add(map[k, n - 1]);
+                    if (k - 1 > 0) //up neighbour
+                        map[k, n].neighbours.Add(map[k - 1, n]);
+                    if (n + 1 < ConfigData.MAP_SIZE)   //right neighbour
+                        map[k, n].neighbours.Add(map[k, n + 1]);
+                    if (k + 1 < ConfigData.MAP_SIZE)   //down neighbour
+                        map[k, n].neighbours.Add(map[k + 1, n]);
+                }
+            }
+
+        }
+
+        public Cell[,] getMap() { return map; }
+
+        // GET A CELL BY ITS ID
+        public Cell getCell(int cellid)
+        {
+            double X = Convert.ToDouble(cellid / ConfigData.MAP_SIZE);
+            double Y = Convert.ToDouble(cellid % ConfigData.MAP_SIZE);
+            int x = (int)Math.Floor(X);
+            int y = (int)Math.Floor(Y);
+            return map[x, y];
+        }
+        // GET A CELL BY ITS <X,Y> CO-ORDINATES
+        public Cell getCell(int x, int y)
+        {
+            return map[x, y];
+        }
+
+        // GET BRICK UPDATES AND UPDATE RESPECTIVE CELLS
+        public void setBrickUpdates(String s)
+        {
+            //  s= <x1>,<y1>,<brick-damage-level>;<x2>,<y2>,<brick-damage-level>;.......
+            char[] delimit1 = { ';' };
+            String[] arr1 = s.Split(delimit1); // arr.Length= number of bricks to be modified
+            int number_of_bricks = arr1.Length;
+            char[] delimit2 = { ',' };
+            for (int i = 0; i < number_of_bricks; i++)
+            {
+                String[] arr2 = arr1[i].Split(delimit2);
+                /*  arr2[0]= <x of i th brick cell>
+                    arr[1]= <y of i th brick cell>
+                    arr[2] = <damage level of i th brick cell>
+                 */
+                Cell brick_temp = this.getCell(int.Parse(arr2[0]), int.Parse(arr2[1]));
+                int temp_b_level = int.Parse(arr2[2]);
+
+                if (brick_temp.is_brick)
+                { // if already a brick cell
+                    brick_temp.brick_level = temp_b_level;
+                    if (temp_b_level == 4)
+                    {
+                        // total brick loss
+                        brick_temp.is_brick = false; // no brick anymore
+                        //brick_temp.cost = 0;
+                        //brick_temp.g = 1;
+                    }
+                    else
+                    {
+                        brick_temp.brick_level = temp_b_level;
+                    }
+
+                }
+                else
+                {
+                    brick_temp.is_brick = true;
+                    brick_temp.brick_level = temp_b_level;
+                }
+            }
+
+        }
+
+        // GET COIN PILE UPDATES AND UPDATE RESPECTIVE CELLS
+        public void setCoinPile(String[] s)
+        {
+            /*
+                     * s[0]="C"
+                     * s[1]=<x>
+                     * s[2]=<y>
+                     * s[3]=<LT>
+                     * s[4]=<Value>
+                     * s[5]="#"
+                     */
+            Cell coin_temp = this.getCell(int.Parse(s[1]), int.Parse(s[2]));
+            coin_temp.is_coin = true;
+            coin_temp.coin_time = int.Parse(s[3]);
+            coin_temp.coin_value = int.Parse(s[4]);
+            coin_temp.run_coin_timer();
+
+        }
+
+        // GET MEDI PACK UPDATES AND UPDATE RESPECTIVE CELLS
+        public void setLifePack(String[] s)
+        {
+            /*
+                     * s[0]="L"
+                     * s[1]=<x>
+                     * s[2]=<y>
+                     * s[3]=<LT>
+                     * s[4]="#"
+                     */
+            Cell life_temp = this.getCell(int.Parse(s[1]), int.Parse(s[2]));
+            life_temp.is_Life = true;
+            life_temp.life_timer = int.Parse(s[3]);
+            life_temp.run_life_timer();
+
+        }
+
+    }
+
+
+    class Cell
+    {
+        // implements a cell in the terrain
+        public int positionX { get; set; }
+        public int positionY { get; set; }
+
+        // INTITIALIZE CELL BY THE ID
+        public Cell(int cellid)
+        {
+            this.id = cellid;
+            //calculate positionX and positionY based on id and MAP_SIZE
+            double X = Convert.ToDouble(id / ConfigData.MAP_SIZE);
+            double Y = Convert.ToDouble(id % ConfigData.MAP_SIZE);
+            this.positionX = (int)Math.Floor(X);
+            this.positionY = (int)Math.Floor(Y);
+
+        }
+
+        //  INITIALIZE A CELL BY <X,Y> CO-ORDINTES
+        public Cell(int x, int y)
+        {
+            this.positionX = x;
+            this.positionY = y;
+            this.id = x * ConfigData.MAP_SIZE + y;
+
+        }
+        public Cell parent { get; set; }
+            
+        public List<Cell> neighbours = new List<Cell>();    //Cell list of neighbours
+        public int id { get; set; }                 //id of the Cell
+        public bool is_enemy { get; set; }       // true if an enemy tanks is in the cell
+        public int enemy_direction { get; set; }  //direction of the enemy if there's an enemy in the cell
+        public bool is_water { get; set; }// true if water
+        public bool is_stone { get; set; }       //true if stone
+        public bool is_brick { get; set; }     //true if brick
+        public int brick_level { get; set; }   //level of the brick
+
+        public bool is_coin { get; set; }      //true if coin pile is in the cell
+        public int coin_value { get; set; }    //value of the coin pile
+        public int coin_time { get; set; }     // time that the coin pile appears
+
+        public bool is_Life { get; set; }      //true if life pack is in the cell
+        public int life_timer { get; set; }
+
+        public bool is_bullet { get; set; }    //true if a bullet is in the cell
+        public int bullet_direction { get; set; } // bullet diection
+
+        /*
+         *  TIMER LOGIC
+         *  -----------
+         *  EACH CELL HAS ITS OWN TWO TIMERS
+         *  1. COIN PILE TIMER
+         *  2. LIFE PACK TIMER
+         *  
+         * ONCE A CELL GETS EITHER A COIN PILE UPDATE OR A LIFE PACK UPDATE IT INITIALIZES RESPECTIVE TIMER.
+         * WHEN THE TIMER HITS ZERO, THE CELL ITSELF WILL CHANGE ITS STATUS ACCORDINGLY.
+         */
+
+        public Timer coin_clock;
+        public Timer life_clock;
+
+        public void run_coin_timer()
+        {
+            coin_clock = new Timer(1000);
+            coin_clock.Enabled = true;
+            coin_clock.AutoReset = true;
+            coin_clock.Elapsed += new ElapsedEventHandler(coin_clock_Elapsed);
+            GC.KeepAlive(coin_clock);
+        }
+
+        private void coin_clock_Elapsed(object o, ElapsedEventArgs e)
+        {
+            if (this.coin_time > 0)
+            {
+                this.coin_time = this.coin_time - 1;
+            }
+            else
+            {
+                this.coin_clock.Stop();
+                this.coin_clock.Dispose();
+                this.is_coin = false;
+            }
+        }
+
+        public void run_life_timer()
+        {
+            life_clock = new Timer(1000);
+            life_clock.Enabled = true;
+            life_clock.AutoReset = true;
+            life_clock.Elapsed += new ElapsedEventHandler(life_clock_Elapsed);
+            GC.KeepAlive(life_clock);
+        }
+
+        private void life_clock_Elapsed(object o, ElapsedEventArgs e)
+        {
+            if (this.life_timer > 0)
+            {
+                this.life_timer = this.life_timer - 1;
+            }
+            else
+            {
+                this.life_clock.Stop();
+                this.life_clock.Dispose();
+                this.is_Life = false;
+            }
+        }
+
+    }
+
+}

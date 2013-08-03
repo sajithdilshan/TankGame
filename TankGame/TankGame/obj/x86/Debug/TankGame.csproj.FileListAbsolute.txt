@@ -1,0 +1,47 @@
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.exe
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.pdb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.exe
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.pdb
+D:\Tanks\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\Background.xnb
+D:\Tanks\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.exe
+D:\Tanks\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.pdb
+D:\Tanks\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.csprojResolveAssemblyReference.cache
+D:\Tanks\TankGame\TankGame\TankGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Tanks\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.exe
+D:\Tanks\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.pdb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-100.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-25.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-50.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-75.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\coin.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\lifepack.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\stone.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank4.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank5.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\water.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bg.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Fonts\spritefont.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\cellbg.xnb
+C:\Users\Sajith Dilshan\Desktop\New folder\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\whitebg.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\cellbg.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-100.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-25.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-50.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-75.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\coin.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\lifepack.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\stone.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank4.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank5.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\water.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bg.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\whitebg.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Fonts\spritefont.xnb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.exe
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\TankGame.pdb
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.exe
+D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\obj\x86\Debug\TankGame.pdb

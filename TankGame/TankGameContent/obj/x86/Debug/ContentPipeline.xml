@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\cellbg.png</Source>
+      <Name>Images\cellbg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\cellbg.xnb</Output>
+      <Time>2013-08-03T14:03:31.8906308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricks-100.png</Source>
+      <Name>Images\bricks-100</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-100.xnb</Output>
+      <Time>2013-08-03T14:03:31.8750307+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricks-25.png</Source>
+      <Name>Images\bricks-25</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-25.xnb</Output>
+      <Time>2013-08-03T14:03:31.8750307+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricks-50.png</Source>
+      <Name>Images\bricks-50</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-50.xnb</Output>
+      <Time>2013-08-03T14:03:31.8906308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricks-75.png</Source>
+      <Name>Images\bricks-75</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bricks-75.xnb</Output>
+      <Time>2013-08-03T14:03:31.8906308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\coin.png</Source>
+      <Name>Images\coin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\coin.xnb</Output>
+      <Time>2013-08-03T14:03:31.8906308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\lifepack.png</Source>
+      <Name>Images\lifepack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\lifepack.xnb</Output>
+      <Time>2013-08-03T14:03:31.9062308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\stone.png</Source>
+      <Name>Images\stone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\stone.xnb</Output>
+      <Time>2013-08-03T14:03:31.9218308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\tank4.png</Source>
+      <Name>Images\tank4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank4.xnb</Output>
+      <Time>2013-08-03T14:03:31.9218308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\tank5.png</Source>
+      <Name>Images\tank5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\tank5.xnb</Output>
+      <Time>2013-08-03T14:03:31.9218308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\water.png</Source>
+      <Name>Images\water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\water.xnb</Output>
+      <Time>2013-08-03T14:03:31.9218308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\bg.jpg</Source>
+      <Name>Images\bg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\bg.xnb</Output>
+      <Time>2013-08-03T14:03:31.8750307+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Images\whitebg.jpg</Source>
+      <Name>Images\whitebg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Images\whitebg.xnb</Output>
+      <Time>2013-08-03T14:03:31.9218308+05:30</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\spritefont.spritefont</Source>
+      <Name>Fonts\spritefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\Fonts\spritefont.xnb</Output>
+      <Time>2013-08-03T14:03:31.8594307+05:30</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGameContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Uni\Semester 4\CS 2212 Programming Challenge II\TankGame\TankGame\TankGame\TankGame\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+05:30</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-10-21T13:59:18.7306286+05:30</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
